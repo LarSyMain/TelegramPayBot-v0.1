@@ -55,7 +55,7 @@ def new_donation(event):
        name = name[2:][:-2]
 
        global _sum_
-       _sum_ = str({event.amount})                  #50 RUB
+       _sum_ = str({event.amount})                  
        _sum_ = _sum_[2:]
        _sum_ = _sum_[:-5]
        
@@ -69,7 +69,7 @@ def new_donation(event):
 @bot.message_handler(commands=["check"])
 def check(massage):
     if Tname == name and _sum_ == "50":
-        bot.send_message(massage.chat.id, "ссылка на вход: https://t.me/+t8PFxUkd9thlODhi" ,parse_mode="html") #проверка оплаты----------------------
+        bot.send_message(massage.chat.id, "ссылка на вход: https://t.me/+t8PFxUkd9thlODhi" ,parse_mode="html")
     else:
         bot.send_message(massage.chat.id, "оплата не проведена" ,parse_mode="html")
 
