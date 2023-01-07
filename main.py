@@ -4,11 +4,11 @@ from donationalerts import Alert
 from requests import get
 
 
-bottoken = "5745372638:AAERoHCoc9pkWbdVpP4eVP79MzAwch46k7k"  #token
+bottoken = ""  #token
 bot = telebot.TeleBot(bottoken)
 
-tg_user_id = "892534199"
-da_alert_widget_token = "aAgqdBrpqBnkImjetPpy"
+tg_user_id = ""
+da_alert_widget_token = ""
 
 
 Tname = ""
